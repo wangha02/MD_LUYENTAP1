@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Năm Sinh </h1>
+<input id="year" type="text">
+<button onclick="join()">check</button>
+<h1></h1>
+<h1 id="can"></h1>
+<h1 id="chi"></h1>
+
+<script>
+    function join() {
+        let A = +document.getElementById("year").value;
+        let canA = A % 10;
+        let chiX = A % 12;
+        switch (canA){
+            case 0:
+                document.getElementById("can").innerHTML = "canh"
+                break;
+            case 1:
+                document.getElementById("can").innerHTML = "tân"
+                break;
+            case 2:
+                document.getElementById("can").innerHTML = "nhâm"
+                break;
+            case 3:
+                document.getElementById("can").innerHTML = "quý"
+                break;
+            case 4:
+                document.getElementById("can").innerHTML = "giáp"
+                break;
+            case 5:
+                document.getElementById("can").innerHTML = "ất"
+                break;
+            case 6:
+                document.getElementById("can").innerHTML = "bính"
+                break;
+            case 7:
+                document.getElementById("can").innerHTML = "đinh"
+                break;
+            case 8:
+                document.getElementById("can").innerHTML = "mậu"
+                break;
+            case 9:
+                document.getElementById("can").innerHTML = "kỷ"
+                break;
+        }
+        switch (chiX) {
+            case 0:
+                document.getElementById("chi").innerHTML = "thân"
+                break;
+            case 1:
+                document.getElementById("chi").innerHTML = "dậu"
+                break;
+            case 2:
+                document.getElementById("chi").innerHTML = "tuất"
+                break;
+            case 3:
+                d3ocument.getElementById("chi").innerHTML = "hợi"
+                break;
+            case 4:
+                document.getElementById("chi").innerHTML = "tý"
+                break;
+            case 5:
+                document.getElementById("chi").innerHTML = "sửu"
+                break;
+            case 6:
+                document.getElementById("chi").innerHTML = "dần"
+                break;
+            case 7:
+                document.getElementById("chi").innerHTML = "mão"
+                break;
+            case 8:
+                document.getElementById("chi").innerHTML = "thìn"
+                break;
+            case 9:
+                document.getElementById("chi").innerHTML = "tỵ"
+                break;
+            case 10:
+                document.getElementById("chi").innerHTML = "ngọ"
+                break;
+            default:
+                document.getElementById(chiX).innerHTML = "Mùi"
+        }
+    }
+</script>
+</body>
+</html>
